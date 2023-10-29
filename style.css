@@ -1,97 +1,215 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --imageHeight: 80px;
+    --imageHeight: 100px;
     --azulLogo: #1972B7;
     --gris: #EAF2FB;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #0067CC;
-    background: radial-gradient(at left top, #0067CC, #FFFFFF);
+    /* background: radial-gradient(at left top, #0067CC, #FFFFFF); */
+    background-color: #4c7dad;
     background-repeat: no-repeat;
     height: calc(100vh - 10px);
+}
+
+/* Saltar al contenido principal */
+
+#skip a {
+    display: block;
+    position: absolute;
+    left: -999px;
+    top: -999px;
+}
+
+#skip a:focus {
+    left: 0;
+    top: 0;
+    padding: 3px;
+    background: #ffc;
+    border: 1px solid #990000;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #fff;
-    position: relative;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, .4);
 }
 
 .header__img {
     height: var(--imageHeight);
+    position: relative;
+    z-index: 100;
 }
+
+/* Container del ícono del hamburger */
 
 .container__menuIcon {
     display: none;
 }
 
-.nav__ul{
+#menuIcon {
+    color: var(--azulLogo);
+    font-size: 40px; 
+}
+
+/* Container del ícono de X */
+
+.container__markIcon {
+    display: none;
+}
+
+/* Ícono de X */
+
+#markIcon {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    z-index: 100;
+}
+
+.nav__ul {
     display: flex;
     gap: 10px;
+}
+
+.nav__li {
+    list-style: none;
 }
 
 .nav__li--a {
     color: var(--azulLogo);
     font-weight: 500;
-    font-size: 28px;
+    font-size: 35px;
     padding: 15px 20px;
     transition: ease .4s;
     border-radius: 25px;
     font-weight: 700;
 }
 
-.nav__li--a:hover {
-    background-color: var(--gris);
-    
+.nav__li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #72abd7;
+    margin: auto;
+    display: block;
+    transition: width .2s linear;
 }
 
-.nav__info {
-    position: absolute;
-    top: 104px;
-    left: 0;
-    height: 0px;
-    width: 100%;
-    transition: .3s;
-    background-color: #fff;
+.nav__li:hover::after {
+    width: 80%;
+    transition: width .2s linear;
 }
 
-.nav__info.active {
-    height: 200px;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1285px) {
     .header {
         justify-content: space-between;
     }
     .container__menuIcon {
         display: block;
-        color: var(--azulLogo);
-        font-size: 30px;
     }
     .nav__ul {
         flex-direction: column;
+        justify-content: space-around;
         position: absolute;
-        top: -10px;
-        left: -10px;
-        width: 100vw;
-        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
         background-color: #000;
         transform: translateX(-100%);
         transition: .4s;
+        padding-top: 130px;
+        padding-left: 20px;
+        overflow-y: scroll;
     }
+
     .nav__ul.active {
         transform: translateX(0);
     }
+    .container__markIcon.active {
+        display: block;
+        color: #fff;
+    }
+    .nav__li--a {
+        color: #fff;
+        font-size: 40px;
+    }
+    .nav__li--a:focus {
+        color: var(--azulLogo);
+    }
+    .nav__li::after {
+        content: "";
+        height: 0;
+    }
+    .nav__li:hover::after {
+        content: "";
+        height: 0;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__img {
+    height: 300px;
+}
+
+.main__h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 65px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+}
+
+.main__a {
+    border-radius: 5px;
+    background-color: var(--azulLogo);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+}
+
+.main__img {
+    height: 260px;
+}
+
+
+.proyecto {
+    background-color: #fff;
+    line-height: 30px;
+}
+
+.proyecto__h2 {
+    padding: 10px 0;
 }

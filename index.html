@@ -10,48 +10,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fd694ccbe.js" crossorigin="anonymous"></script>
-    <script sc="https://cdn.userway.org/widget.js" data-account="ngDnNMAJfg"></script>
     <title>Acceder es un derecho | Inicio</title>
 </head>
 <body>
+    <!-- <div id="skip">
+        <a href="#inicio">Ir al contenido principal</a>
+    </div> -->
     <header class="header">
-        <a href="#inicio" tabindex="1">
+        <a href="#inicio">
             <img src="img/logo.png" class="header__img" alt="Logo del sitio web">
         </a>
-       
-        <div class="nav__ifo">
 
-        </div>
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"><a href="#proyecto" class="nav__li--a" tabindex="2">Proyecto</a></li>
+                <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
                 <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="3">Instituciones</a></li>
-                <li class="nav__li"><a href="#equipo" class="nav__li--a" tabindex="4">Equipo</a></li>
-                <li class="nav__li"><a href="#recursos" class="nav__li--a" tabindex="5">Recursos</a></li>
-                <li class="nav__li"><a href="#acerca-de" class="nav__li--a" tabindex="6">FAQ</a></li>
-                <li class="nav__li"><a href="#contacto" class="nav__li--a" tabindex="7">Contacto</a></li>
+                <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
+                <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
+                <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
+                <li class="nav__li"><a href="#contacto" class="nav__li--a">Contacto</a></li>
             </ul>
         </nav>
         <a href="#" class="container__menuIcon">
             <i class="fa-solid fa-bars" id="menuIcon"></i>
         </a>
+        <a href="#" class="container__markIcon">
+            <i class="fa-solid fa-xmark" id="markIcon"></i>
+        </a>
+        
     </header>
 
-    <!-- NOTAS:
-    . Agregar word swiping animation en el footer
-    . Agregar typing text animation (En la parte de Preguntas y Respuestas de Accesibilidad. ¿Qué es la accesibilidad? (bien grande con 100vh y en otra parte poner "Responsive", "Fácil", etc.
-    En esa página además agregar los resultados positivos de Wave, Lighthouse))
-    . Contador JS
-    APPLE Web - DESCARTADO
-    
-    -->
+   
 
     <main class="main" id="inicio">
-
+        <div class="container__left">
+            <h1 class="main__h1">Acceder <br>es un derecho</h1>
+            <a href="#proyecto" class="main__a">Conocer más</a>
+        </div>
+        <img src="img/logo.png" alt="Logo" class="main__img">
     </main>
+
+    
+
+
+    <section class="proyecto">
+        <h2 class="proyecto__h2" id="proyecto">Proyecto</h2>
+        <p>
+            "Las personas con discapacidad múltiple y su derecho a acceder a las tecnologías de apoyo" es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.
+            <br>
+            Su objetivo central es ofrecer acceso a dispositivos adaptados en la búsqueda concreta de mejorar las oportunidades de comunicación, aprendizaje y calidad de vida de personas con discapacidad múltiple. Estos dispositivos no solo facilitarán la comunicación, sino que también mejorarán la participación de los estudiantes en las actividades escolares diarias en las instituciones participantes. 
+            <br>
+            El objetivo final es contribuir a la construcción de una educación inclusiva que promueva los derechos de todas las personas y derribe las barreras que limitan su desarrollo personal y social.
+            <br>
+            Está financiado por la Secretaría de Políticas Universitarias (SPU), en el marco del Programa de Fortalecimiento de la Extensión. 
+        </p>
+    </section>
 
     <footer class="footer">
 
     </footer>
+
+
+     <!-- NOTAS:
+    . AÑADIR UN COMENTARIO PARA CADA LÍNEA DE CSS
+    . CENTRARME EN QUE EL CSS SEA LIMPIO, EL MENÚ ESTÁ ROTO
+    . Agregar word swiping animation en el footer https://www.youtube.com/watch?v=f0qX-lkk8Y8
+    . Agregar typing text animation (En la parte de Preguntas y Respuestas de Accesibilidad. ¿Qué es la accesibilidad? (bien grande con 100vh y en otra parte poner "Responsive", "Fácil", etc.
+    En esa página además agregar los resultados positivos de Wave, Lighthouse))
+    . Contador JS
+    APPLE Web - DESCARTADO
+    . Agregar Script de Userway
+    . Wave Animation en background
+    . Barra para navegar personalizada
+    -->
 </body>
 </html>
+
+
