@@ -214,6 +214,7 @@ body {
     padding: 10px 30px;
     box-shadow: var(--sombra);
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -230,7 +231,7 @@ body {
     box-shadow: var(--sombra);
 }
 
-@media screen and (max-height: 635px) {
+@media screen and (max-height: 550px) {
     .main{
         height: auto;
     }
@@ -242,7 +243,7 @@ body {
 /* WAVE */
 
 
-.section__wave .wave {
+.wave {
     position: absolute;
     bottom: 0;
     left: 0;
