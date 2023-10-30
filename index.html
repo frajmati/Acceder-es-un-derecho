@@ -18,11 +18,11 @@
     </div> -->
     <header class="header">
         <a href="#inicio">
-            <img src="img/logo.png" class="header__img" alt="Logo del sitio web">
+            <img src="img/logo.svg" class="header__img" alt="Logo del sitio web">
         </a>
 
-        <nav class="nav">
-            <ul class="nav__ul">
+        <nav class="nav__desktop">
+            <ul class="nav__ul--desktop">
                 <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
                 <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="3">Instituciones</a></li>
                 <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
@@ -31,16 +31,29 @@
                 <li class="nav__li"><a href="#contacto" class="nav__li--a">Contacto</a></li>
             </ul>
         </nav>
+
+
         <a href="#" class="container__menuIcon">
             <i class="fa-solid fa-bars" id="menuIcon"></i>
-        </a>
-        <a href="#" class="container__markIcon">
-            <i class="fa-solid fa-xmark" id="markIcon"></i>
         </a>
         
     </header>
 
-    <div class="content">
+    <nav class="nav__mobile">
+        <a href="#" class="container__markIcon">
+            <i class="fa-solid fa-xmark" id="markIcon"></i>
+        </a>
+        <ul class="nav__ul--mobile">
+            <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
+            <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="3">Instituciones</a></li>
+            <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
+            <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
+            <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
+            <li class="nav__li"><a href="#contacto" class="nav__li--a">Contacto</a></li>
+        </ul>
+        
+    </nav>
+
 
     
 
@@ -48,10 +61,12 @@
 
     <main class="main" id="inicio">
         <div class="container__left">
-            <h1 class="main__h1">Acceder <br>es un derecho</h1>
+            <h1 class="main__h1">Acceder es un derecho</h1>
             <a href="#proyecto" class="main__a">Conocer más</a>
         </div>
-        <img src="img/logo.png" alt="Logo" class="main__img">
+        <div class="container__imgMain">
+            <img src="img/logo.svg" alt="Logo" class="main__img">
+        </div>
     </main>
 
     
@@ -70,15 +85,19 @@
         </p>
     </section>
 
+    <section class="section__wave">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+
     <footer class="footer">
 
     </footer>
 
-    </div>
 
      <!-- NOTAS:
-    . AÑADIR UN COMENTARIO PARA CADA LÍNEA DE CSS
-    . CENTRARME EN QUE EL CSS SEA LIMPIO, EL MENÚ ESTÁ ROTO
     . Agregar word swiping animation en el footer https://www.youtube.com/watch?v=f0qX-lkk8Y8
     . Agregar typing text animation (En la parte de Preguntas y Respuestas de Accesibilidad. ¿Qué es la accesibilidad? (bien grande con 100vh y en otra parte poner "Responsive", "Fácil", etc.
     En esa página además agregar los resultados positivos de Wave, Lighthouse))
@@ -87,6 +106,8 @@
     . Agregar Script de Userway
     . Wave Animation en background
     . Barra para navegar personalizada
+    . https://www.youtube.com/watch?v=MMNEEdGa5eE&ab_channel=OnlineTutorials (Wave animation background para pantalla principal)
+    . Agregar animation on scroll https://www.youtube.com/watch?v=T33NN_pPeNI&ab_channel=BeyondFireship
     -->
 </body>
 </html>

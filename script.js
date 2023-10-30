@@ -1,30 +1,23 @@
-const menuIcon = document.getElementById("menuIcon"); // Ícono Hamburger
-const navUl = document.querySelector(".nav__ul"); //Ul con links
-const markIcon = document.querySelector(".container__markIcon"); 
-const navLinks = document.querySelectorAll(".nav__li--a");
-const content = document.querySelector(".content"); 
+const menuIcon = document.querySelector(".container__menuIcon");
+const markIcon = document.querySelector(".container__markIcon");
+const navMobile = document.querySelector(".nav__mobile");
+const navMobilelinks = document.querySelectorAll(".nav__ul--mobile .nav__li .nav__li--a");
 
 menuIcon.addEventListener("click", () => {
-    navUl.classList.toggle("active");
-    markIcon.classList.toggle("active");
-    menuIcon.style.display = "none";
-    content.style.display = "none";
+    document.body.style.overflow = "hidden";
+    navMobile.classList.toggle("active");
 });
 
 markIcon.addEventListener("click", () => {
-    menuIcon.style.display = "block";
-    navUl.classList.toggle("active");
-    markIcon.classList.toggle("active");
-    content.style.display = "block";
+    navMobile.classList.toggle("active");
+    document.body.style.overflow = "auto";
     
 })
 
-navLinks.forEach((link) => {
+navMobilelinks.forEach((link) => {
     link.addEventListener("click", () => {
-        menuIcon.style.display = "block";
-        markIcon.classList.toggle("active");
-        navUl.classList.toggle("active");
-        content.style.display = "block";
+        navMobile.classList.toggle("active");
+        document.body.style.overflow = "auto";
     })
 })
 
