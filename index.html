@@ -13,6 +13,12 @@
     <title>Acceder es un derecho | Inicio</title>
 </head>
 <body>
+    <div class="loader">
+
+    </div>
+    <div class="content">
+
+    
     <!-- <div id="skip">
         <a href="#inicio">Ir al contenido principal</a>
     </div> -->
@@ -24,7 +30,7 @@
         <nav class="nav__desktop">
             <ul class="nav__ul--desktop">
                 <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
-                <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="3">Instituciones</a></li>
+                <li class="nav__li"><a href="#instituciones" class="nav__li--a">Instituciones</a></li>
                 <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
                 <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
                 <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
@@ -33,19 +39,19 @@
         </nav>
 
 
-        <a href="#" class="container__menuIcon">
+        <button class="container__menuIcon">
             <i class="fa-solid fa-bars" id="menuIcon"></i>
-        </a>
+        </button>
         
     </header>
 
     <nav class="nav__mobile">
-        <a href="#" class="container__markIcon">
+        <button class="container__markIcon">
             <i class="fa-solid fa-xmark" id="markIcon"></i>
-        </a>
+        </button>
         <ul class="nav__ul--mobile">
             <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
-            <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="3">Instituciones</a></li>
+            <li class="nav__li"><a href="#instituciones" class="nav__li--a">Instituciones</a></li>
             <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
             <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
             <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
@@ -61,20 +67,23 @@
 
     <main class="main" id="inicio">
         <div class="container__left">
-            <h1 class="main__h1">Acceder es un derecho</h1>
-            <a href="#proyecto" class="main__a">Conocer más</a>
+            <h1 class="main__h1 hidden">Acceder es un derecho</h1>
+            <a href="#proyecto" class="main__a hidden">Conocer más</a>
         </div>
         <div class="container__imgMain">
-            <img src="img/logo.svg" alt="Logo" class="main__img">
+            <img src="img/logo.svg" alt="Logo" class="main__img hidden">
         </div>
+        <section class="section__wave">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
     </main>
 
-    
-
-
     <section class="proyecto">
-        <h2 class="proyecto__h2" id="proyecto">Proyecto</h2>
-        <p>
+        <h2 class="proyecto__h2 hidden" id="proyecto">Proyecto</h2>
+        <p class="proyecto__p hidden">
             "Las personas con discapacidad múltiple y su derecho a acceder a las tecnologías de apoyo" es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.
             <br>
             Su objetivo central es ofrecer acceso a dispositivos adaptados en la búsqueda concreta de mejorar las oportunidades de comunicación, aprendizaje y calidad de vida de personas con discapacidad múltiple. Estos dispositivos no solo facilitarán la comunicación, sino que también mejorarán la participación de los estudiantes en las actividades escolares diarias en las instituciones participantes. 
@@ -84,18 +93,14 @@
             Está financiado por la Secretaría de Políticas Universitarias (SPU), en el marco del Programa de Fortalecimiento de la Extensión. 
         </p>
     </section>
-
-    <section class="section__wave">
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div>
-    </section>
+    
 
     <footer class="footer">
 
     </footer>
 
+
+    </div>
 
      <!-- NOTAS:
     . Agregar word swiping animation en el footer https://www.youtube.com/watch?v=f0qX-lkk8Y8
