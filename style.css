@@ -9,8 +9,9 @@
     --imageHeight: 100px;
     --azulLogo: #1972B7;
     --azulBackground: #4c7dad;
-    --gris: #EAF2FB;
     --sombra: 5px 0px 15px 0px rgb(0, 0, 0, .4);
+    --h2FontSizeMobile: 34px;
+    --pFontSizeMobile: 16px;
 }
 
 body::-webkit-scrollbar{
@@ -28,6 +29,24 @@ body {
     /* background: radial-gradient(at left top, #0067CC, #FFFFFF); */
     background-color: var(--azulBackground);
     background-repeat: no-repeat;
+}
+
+.btn__scrollToTop {
+    background: none;
+    border: none;
+    position: fixed;
+    z-index: 300;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: .4s;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.iconScroll {
+    font-size: 20px;
 }
 
 .hidden {
@@ -335,7 +354,11 @@ body {
 
 .proyecto__h2 {
     padding: 10px 0;
-    font-size: 30px;
+    font-size: var(--h2FontSizeMobile);
+}
+
+.proyecto__p {
+    font-size: var(--pFontSizeMobile);
 }
 
 
