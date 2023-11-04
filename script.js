@@ -59,3 +59,6 @@ window.addEventListener('load', function () {
 
 
 console.log(window.innerHeight);
+
+alert("Altura: " + window.innerHeight);
+alert("Ancho: " + window.innerWidth);
