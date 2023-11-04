@@ -270,9 +270,9 @@ body {
     box-shadow: var(--sombra);
 }
 
-@media screen and (orientation: landscape) (max-height: 530px) {
+@media screen and (orientation: landscape) and (max-height: 530px) {
     .main{
-        height: auto;
+        /* height: auto; */
     }
 }
 
