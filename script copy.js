@@ -58,4 +58,54 @@ window.addEventListener('load', function () {
 
 
 
-console.log(window.innerHeight);
+//CONTADOR
+
+const infoP = document.querySelector(".info__p");
+
+
+let contador = 1;
+let limite = 50;
+
+const elementoObservado = document.querySelector(".info__p");
+
+const observerInfo = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            if (contador == 51) {
+                
+            }
+            else {
+                let intervalo = setInterval(() => {
+                    infoP.textContent = `+ ${contador}`;
+                    contador++;
+                  
+                    if (contador > 50) {
+                      clearInterval(intervalo);
+                    }
+                  }, 50);
+            }
+            
+        }
+    })
+});
+
+observerInfo.observe(elementoObservado);
+
+//SCROLL TO TOP
+
+const btn = document.querySelector(".btn__scrollToTop");
+
+document.addEventListener("scroll",() => {
+    let scrollY = (window.scrollY);
+
+    if (scrollY > 100) {
+        btn.style.opacity = 1;
+    }
+    else {
+        btn.style.opacity = 0;
+    }
+})
+
+btn.addEventListener("click", () => {
+    window.scroll(0,0);
+})

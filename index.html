@@ -10,20 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fd694ccbe.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Acceder es un derecho es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.">
     <title>Acceder es un derecho | Inicio</title>
 </head>
 <body>
     <div class="loader">
-
+        <div class="background background--1"></div>
+        <div class="background background--2"></div>
+        <div class="background background--3"></div>
+        <div class="background background--4"></div>
+        <div class="background background--5"></div>
     </div>
-    <div class="content">
+    <div class="content hidden">
 
-    <button class="btn__scrollToTop">
-        <i class="fa-solid fa-arrow-up iconScroll"></i>
-    </button>
-    <!-- <div id="skip">
-        <a href="#inicio">Ir al contenido principal</a>
-    </div> -->
+
+
     <header class="header">
         <a href="#inicio">
             <img src="img/logo.svg" class="header__img" alt="Logo del sitio web">
@@ -31,33 +32,45 @@
 
         <nav class="nav__desktop">
             <ul class="nav__ul--desktop">
-                <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
-                <li class="nav__li"><a href="#instituciones" class="nav__li--a">Instituciones</a></li>
-                <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
-                <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
-                <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
-                <li class="nav__li"><a href="#contacto" class="nav__li--a">Contacto</a></li>
+                <li class="nav__li">
+                    <a href="#proyecto" class="nav__li--a" aria-label="Conozca acerca del proyecto">Proyecto</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#instituciones" class="nav__li--a">Instituciones</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#equipo" class="nav__li--a">Equipo</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#recursos" class="nav__li--a" >Recursos</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#acerca-de" class="nav__li--a" >FAQ</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#contacto" class="nav__li--a">Contacto</a>
+                </li>
             </ul>
         </nav>
 
 
-        <button class="container__menuIcon">
+        <button class="container__menuIcon" aria-label="Menú para navegar en los links">
             <i class="fa-solid fa-bars" id="menuIcon"></i>
         </button>
         
     </header>
 
     <nav class="nav__mobile">
-        <button class="container__markIcon">
+        <button class="container__markIcon" aria-label="Salir del menú de navegación">
             <i class="fa-solid fa-xmark" id="markIcon"></i>
         </button>
         <ul class="nav__ul--mobile">
-            <li class="nav__li"><a href="#proyecto" class="nav__li--a" aria-label="">Proyecto</a></li>
-            <li class="nav__li"><a href="#instituciones" class="nav__li--a">Instituciones</a></li>
-            <li class="nav__li"><a href="#equipo" class="nav__li--a">Equipo</a></li>
-            <li class="nav__li"><a href="#recursos" class="nav__li--a">Recursos</a></li>
-            <li class="nav__li"><a href="#acerca-de" class="nav__li--a">FAQ</a></li>
-            <li class="nav__li"><a href="#contacto" class="nav__li--a">Contacto</a></li>
+            <li class="nav__li"><a href="#proyecto" class="nav__li--a" tabindex="-1">Proyecto</a></li>
+            <li class="nav__li"><a href="#instituciones" class="nav__li--a" tabindex="-1">Instituciones</a></li>
+            <li class="nav__li"><a href="#equipo" class="nav__li--a" tabindex="-1">Equipo</a></li>
+            <li class="nav__li"><a href="#recursos" class="nav__li--a" tabindex="-1">Recursos</a></li>
+            <li class="nav__li"><a href="#acerca-de" class="nav__li--a" tabindex="-1">FAQ</a></li>
+            <li class="nav__li"><a href="#contacto" class="nav__li--a" tabindex="-1">Contacto</a></li>
         </ul>
         
     </nav>
@@ -69,11 +82,11 @@
 
     <main class="main" id="inicio">
         <div class="container__left">
-            <h1 class="main__h1 hidden">Acceder es un derecho</h1>
-            <a href="#proyecto" class="main__a hidden">Conocer más</a>
+            <h1 class="main__h1">Acceder es un derecho</h1>
+            <a href="#proyecto" class="main__a">Conocer más</a>
         </div>
-        <div class="container__imgMain hidden">
-            <img src="img/logo.svg" alt="Logo" class="main__img">
+        <div class="container__imgMain">
+            <img src="img/logo.svg" alt="Logo del sitio web" class="main__img">
         </div>
         <section class="section__wave">
             <div class="wave wave1"></div>
@@ -83,31 +96,7 @@
         </section>
     </main>
 
-    <section class="proyecto">
-        <h2 class="proyecto__h2 hidden" id="proyecto">Proyecto</h2>
-        <p class="proyecto__p hidden">
-            "Las personas con discapacidad múltiple y su derecho a acceder a las tecnologías de apoyo" es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.
-            <br>
-            Su objetivo central es ofrecer acceso a dispositivos adaptados en la búsqueda concreta de mejorar las oportunidades de comunicación, aprendizaje y calidad de vida de personas con discapacidad múltiple. Estos dispositivos no solo facilitarán la comunicación, sino que también mejorarán la participación de los estudiantes en las actividades escolares diarias en las instituciones participantes. 
-            <br>
-            El objetivo final es contribuir a la construcción de una educación inclusiva que promueva los derechos de todas las personas y derribe las barreras que limitan su desarrollo personal y social.
-            <br>
-            Está financiado por la Secretaría de Políticas Universitarias (SPU), en el marco del Programa de Fortalecimiento de la Extensión. 
-        </p>
-    </section>
-
-    <section class="equipo">
-        <h2 class="equipo__h2 hidden" id="equipo">Equipo</h2>
-        <div class="info">
-            <span class="info__p">+0</span><span> estudiantes</span>
-        </div>
-    </section>
     
-
-    <footer class="footer">
-
-    </footer>
-
 
     </div>
 
@@ -125,5 +114,4 @@
     -->
 </body>
 </html>
-
 

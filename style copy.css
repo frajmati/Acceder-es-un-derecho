@@ -250,12 +250,8 @@ body {
     box-shadow: var(--sombra);
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color .6s;
 }
 
-.main__a:hover {
-    background-color: #1463a0;
-}
 
 .container__imgMain {
     z-index: 250;
@@ -365,35 +361,11 @@ body {
     font-size: var(--pFontSizeMobile);
 }
 
-@media screen and (min-width: 745px) {
-    .main__h1 {
-        font-size: 80px;
-    }
-    .main__a {
-        font-size: 30px;
-    }
-    .container__imgMain {
-        height: 300px;
-    }
-}
 
 
-@media screen and (min-width: 1400px) {
-    /* 1700 */
-    .container__left {
-        gap: 20px;
-    }
-    .main__h1 {
-        font-size: 120px;
-    }
-    .main__a {
-        font-size: 50px;
-    }
-    .container__imgMain {
-        margin-top: 30px;
-        height: 400px;
-    }
-}
+
+
+
 
 
 .loader {
