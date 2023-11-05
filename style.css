@@ -43,6 +43,7 @@ body {
     padding: 10px;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
 }
 
 .iconScroll {
@@ -351,20 +352,6 @@ body {
 }
 
 
-.proyecto {
-    background-color: #fff;
-    line-height: 30px;
-}
-
-.proyecto__h2 {
-    padding: 10px 0;
-    font-size: var(--h2FontSizeMobile);
-}
-
-.proyecto__p {
-    font-size: var(--pFontSizeMobile);
-}
-
 @media screen and (min-width: 745px) {
     .main__h1 {
         font-size: 80px;
@@ -413,7 +400,7 @@ body {
     display: none;
 }
 
-/* .background {
+.background {
     height: 20vh;
     visibility: hidden;
     background-color: var(--azulBackground);
@@ -444,4 +431,4 @@ body {
         transform: translateX(0);
         visibility: visible;
     }
-} */
+}
