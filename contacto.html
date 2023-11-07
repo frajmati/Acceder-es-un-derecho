@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleEquipo.css">
+    <link rel="stylesheet" href="styleContacto.css">
     <script src="scriptGeneral.js" defer></script>
     <script src="scriptContacto.js" defer></script>
     <link rel="shortcut icon" href="img/logo.png">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fd694ccbe.js" crossorigin="anonymous"></script>
     <meta name="description" content="Acceder es un derecho es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.">
-    <title>Acceder es un derecho | Recursos</title>
+    <title>Acceder es un derecho | Contacto</title>
 </head>
 <body>
 
@@ -65,8 +65,8 @@
             <li class="nav__li"><a href="instituciones.hmtl" class="nav__li--a" tabindex="-1">Instituciones</a></li>
             <li class="nav__li"><a href="equipo.html" class="nav__li--a" tabindex="-1">Equipo</a></li>
             <li class="nav__li"><a href="recursos.html" class="nav__li--a" tabindex="-1">Recursos</a></li>
-            <li class="nav__li"><a href="acerca-de.hmtl" class="nav__li--a" tabindex="-1">FAQ</a></li>
-            <li class="nav__li"><a href="contacto.hmtl" class="nav__li--a" tabindex="-1">Contacto</a></li>
+            <li class="nav__li"><a href="acerca-de.html" class="nav__li--a" tabindex="-1">FAQ</a></li>
+            <li class="nav__li"><a href="contacto.html" class="nav__li--a" tabindex="-1">Contacto</a></li>
         </ul>
         
     </nav>
@@ -75,15 +75,22 @@
     
 
    
-    <section class="equipo hidden">
-        <h2 class="equipo__h2" id="proyecto">Contacto</h2>
-        <form action="https://formsubmit.co/matias.frajberg@gmail.com" method="POST">
+    <section class="contacto hidden">
+        <h2 class="contacto__h2" id="proyecto">Contacto</h2>
+        <form action="https://formsubmit.co/matias.frajberg@gmail.com" method="POST" class="form">
             <input type="hidden" name="_captcha" value="false">
-            <input type="name" name="Nombre" placeholder="Nombre">
-            <input type="email" name="Correo electrónico" placeholder="Correo electrónico">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+            <input type="name" name="Nombre" placeholder="Nombre" required>
+            <input type="email" name="Correo electrónico" placeholder="Correo electrónico" required>
             <textarea name="Información" placeholder="Cuerpo del mensaje"></textarea>
-            <input type="submit" value="Enviar"></input>
+            <input type="submit" value="Enviar" class="btn__submit"></input>
         </form>
+        <!-- ÍCONOS EN BALCNO Y NEGRO, LES DOY CLICK Y CAMBIAN A SU COLOR ORIGINAL -->
+        <div class="redes">
+            <i class="fa-brands fa-instagram instagramIcon"></i>
+            <i class="fa-brands fa-youtube youtubeIcon"></i>
+            <i class="fa-solid fa-envelope mailIcon"></i>
+        </div>
     </section>
 
 </body>

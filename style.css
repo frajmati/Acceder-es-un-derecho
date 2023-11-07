@@ -271,12 +271,6 @@ body {
     box-shadow: var(--sombra);
 }
 
-@media screen and (orientation: landscape) and (max-height: 530px) {
-    .main{
-        /* height: auto; */
-    }
-}
-
 
 /* ________________________________________________________________________________ */
 
@@ -381,6 +375,13 @@ body {
         height: 400px;
     }
 }
+
+@media screen and (orientation: landscape) and (max-height: 630px) {
+    .container__imgMain{
+        height: 250px;
+    }
+}
+
 
 
 .loader {

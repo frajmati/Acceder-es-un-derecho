@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --imageHeight: 100px;
+    --azulLogo: #1972B7;
+    --azulBackground: #4c7dad;
+    --sombra: 5px 0px 15px 0px rgb(0, 0, 0, .4);
+    --h2FontSize: 42px;
+    --pFontSize: 18px;
+}
+
+body::-webkit-scrollbar{
+	width: 7px;
+	/* background-color: #000; */
+}
+
+body::-webkit-scrollbar-thumb{ /* Barrita */
+	width: 7px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: radial-gradient(at left top, #0067CC, #FFFFFF); */
+    background-color: var(--azulBackground);
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.main {
+    padding: 10px;
+}
+
+.gracias__h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.gracias__p {
+    font-size: 18px;
+}
+
+.gracias__gif {
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+}
+
+.gracias__btn {
+    display: inline-block;
+    padding: 20px 40px;
+    margin-top: 20px;
+    background-color: var(--azulBackground);
+    width: auto;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+    .gracias__h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .gracias__p {
+        font-size: 40px;
+    }
+    
+    .gracias__gif {
+        width: 400px;
+    }
+}
