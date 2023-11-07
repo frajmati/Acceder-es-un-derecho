@@ -202,7 +202,7 @@
     height: 20vh;
     visibility: hidden;
     background-color: var(--azulBackground);
-    animation: backgroundContent .3s linear forwards;
+    animation: backgroundLeftToRightFULL .3s linear forwards;
 }
 
 .background--2 {
@@ -221,7 +221,9 @@
     animation-delay: .8s;
 }
 
-@keyframes backgroundContent {
+
+
+@keyframes backgroundLeftToRightFULL {
     0% {
         transform: translateX(-100%);
     }
