@@ -10,8 +10,9 @@
     --azulLogo: #1972B7;
     --azulBackground: #4c7dad;
     --sombra: 5px 0px 15px 0px rgb(0, 0, 0, .4);
-    --h2FontSizeMobile: 34px;
-    --pFontSizeMobile: 16px;
+    --h2FontSize: 42px;
+    --pFontSize: 18px;
+    --gradiente: rgba(0,0,0,.4);
 }
 
 body::-webkit-scrollbar{
@@ -66,6 +67,10 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+section, main {
+    animation: animationOpacity 1s;
 }
 
 /* ________________________________________________________________________________ */
@@ -198,4 +203,5 @@ body {
 }
 
 
+/* ________________________________________________________________________________ */
 

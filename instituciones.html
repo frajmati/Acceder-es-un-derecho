@@ -69,9 +69,10 @@
 
 
     
+    
 
    
-    <section class="instituciones hidden">
+    <section class="instituciones">
         <h2 class="instituciones__h2" id="proyecto">Instituciones</h2>
         <p class="instituciones__p">Las instituciones que trabajan articuladamente en el proyecto son:</p>
         <ul class="instituciones__ul">
@@ -89,6 +90,68 @@
             </li>    
         </ul>
         
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="module">
+
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+            new Swiper(".swiper", {
+                direction: "horizontal",
+                speed: 800,
+                loop: true,
+                
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                    clickable: "true",
+                }
+        });
+        </script>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1 slide-item img-1">
+                    <div class="textContainer">
+                        <h3 class="slider-title">Título 1</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-2 slide-item img-2">
+                    <div class="textContainer">
+                        <h3 class="slider-title">Título 2</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-3 slide-item img-3">
+                    <div class="textContainer">
+                        <h3 class="slider-title">Título 3</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-4 slide-item img-4">
+                    <div class="textContainer">
+                        <h3 class="slider-title">Título 4</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-5 slide-item img-5">
+                    <div class="textContainer">
+                        <h3 class="slider-title">Título 5</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 </body>
 </html>
