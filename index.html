@@ -17,12 +17,11 @@
     
 
 
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-
-
 
 
 
@@ -50,8 +49,10 @@
     <div class="content hidden">
 
     
+        
 
-    
+        
+        
 
     <button class="btn__scrollToTop" aria-label="Navegar hasta la parte superior de la página">
         <i class="fa-solid fa-arrow-up iconScroll"></i>
@@ -103,7 +104,32 @@
         
     </nav>
 
+    <script type="module">
 
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+        new Swiper(".swiper", {
+            direction: "horizontal",
+            speed: 800,
+            loop: true,
+            
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: "true",
+            }
+    });
+    </script>
     
 
     <div class="info">

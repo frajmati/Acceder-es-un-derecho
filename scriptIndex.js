@@ -12,7 +12,7 @@ const content = document.querySelector(".content");
 // });
 
 loader.style.display = 'none';
-content.style.display = 'block';
+        content.style.display = 'block';
 
 
 
@@ -87,11 +87,11 @@ let institucionesInfo = `
             </li>    
         </ul>
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="scriptInstituciones.js" type="module"></script>
+
         
+
+        
+
 
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -207,7 +207,7 @@ let contactoInfo =
 </section>`
 ;
 
-indexInfo.innerHTML = mainInfo;
+indexInfo.innerHTML = institucionesInfo;
 
 logoLink.addEventListener("click", (e) => {
     e.preventDefault();
