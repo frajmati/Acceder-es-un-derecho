@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleGeneral.css">
-    <link rel="stylesheet" href="styleInstituciones.css">
-    <script src="scriptGeneral.js" defer></script>
+
+    <link rel="stylesheet" href="css/styleGeneral.css">
+    <link rel="stylesheet" href="css/styleInstituciones.css">
+    
+    <script src="js/scriptGeneral.js" defer></script>
+    
+    
     <link rel="shortcut icon" href="img/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="https://kit.fontawesome.com/5fd694ccbe.js" crossorigin="anonymous"></script>
-    <meta name="description" content="Acceder es un derecho es un proyecto coordinado por la Secretaría de Extensión de la Facultad de Educación y articulado con las escuelas Fidela Maldonado de Cano, Ing. Gabriel del Mazo, Thadi y Escuela de Comercio Martín Zapata.">
+    <script src="https://cdn.userway.org/widget.js" data-account="ngDnNMAJfg"></script>
     <title>Acceder es un derecho | Instituciones</title>
 </head>
 <body>
@@ -59,7 +69,7 @@
         </button>
         <ul class="nav__ul--mobile">
             <li class="nav__li"><a href="proyecto.html" class="nav__li--a" tabindex="-1">Proyecto</a></li>
-            <li class="nav__li"><a href="instituciones.hmtl" class="nav__li--a" tabindex="-1">Instituciones</a></li>
+            <li class="nav__li"><a href="instituciones.html" class="nav__li--a" tabindex="-1">Instituciones</a></li>
             <li class="nav__li"><a href="equipo.html" class="nav__li--a" tabindex="-1">Equipo</a></li>
             <li class="nav__li"><a href="recursos.html" class="nav__li--a" tabindex="-1">Recursos</a></li>
             <li class="nav__li"><a href="contacto.html" class="nav__li--a" tabindex="-1">Contacto</a></li>
@@ -90,9 +100,6 @@
             </li>    
         </ul>
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script type="module">
 
             import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
@@ -119,39 +126,43 @@
                 }
         });
         </script>
-
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-1 slide-item img-1">
-                    <div class="textContainer">
-                        <h3 class="slider-title">Título 1</h3>
+        
+        <div class="containerSwiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1 slide-item img-1">
+                        <div class="textContainer">
+                            <h3 class="slider-title">Escuela de Comercio Martín Zapata</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2 slide-item img-2">
+                        <div class="textContainer">
+                            <h3 class="slider-title">Escuela Guillermo Cano</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-3 slide-item img-3">
+                        <div class="textContainer">
+                            <h3 class="slider-title">Escuela Guillermo Cano</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-4 slide-item img-4">
+                        <div class="textContainer">
+                            <h3 class="slider-title">Escuela THADI</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-5 slide-item img-5">
+                        <div class="textContainer">
+                            <h3 class="slider-title">Escuela Técnica Ingeniero Gabriel del Mazo</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide slide-2 slide-item img-2">
-                    <div class="textContainer">
-                        <h3 class="slider-title">Título 2</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide slide-3 slide-item img-3">
-                    <div class="textContainer">
-                        <h3 class="slider-title">Título 3</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide slide-4 slide-item img-4">
-                    <div class="textContainer">
-                        <h3 class="slider-title">Título 4</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide slide-5 slide-item img-5">
-                    <div class="textContainer">
-                        <h3 class="slider-title">Título 5</h3>
-                    </div>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
         </div>
+
+        
     </section>
 </body>
 </html>

@@ -1,0 +1,143 @@
+:root {
+    --imageHeight: 100px;
+    --azulLogo: #1972B7;
+    --azulBackground: #4c7dad;
+    --sombra: 5px 0px 15px 0px rgb(0, 0, 0, .4);
+    --h2FontSize: 42px;
+    --pFontSize: 18px;
+    --gradiente: rgba(0,0,0,.4);
+}
+
+/* ________________________________________________________________________________ */
+
+/* PRINCIPAL */
+
+
+.instituciones {
+    background-color: #fff;
+    line-height: 42px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+}
+
+.instituciones__h2 {
+    padding: 10px 0;
+    font-size: var(--h2FontSize);
+}
+
+.instituciones__p {
+    font-size: var(--pFontSize);
+}
+
+.instituciones__ul {
+    margin-left: 30px;
+    list-style-type: disc;
+    font-size: var(--pFontSize);
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-1 {
+    background-image: linear-gradient(var(--gradiente), var(--gradiente)), url(../img/fotos/PII\ -\ 1.jpg);
+}
+
+.img-2 {
+    background-image: linear-gradient(var(--gradiente), var(--gradiente)), url(../img/fotos/PII\ -\ 2.jpg);
+}
+
+.img-3 {
+    background-image: linear-gradient(var(--gradiente), var(--gradiente)), url(../img/fotos/PII\ -\ 3.jpg);
+}
+
+.img-4 {
+    background-image: linear-gradient(var(--gradiente), var(--gradiente)), url(../img/fotos/PII\ -\ 4.jpg);
+}
+
+.img-5 {
+    background-image: linear-gradient(var(--gradiente), var(--gradiente)), url(../img/fotos/PII\ -\ 5.jpg);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: #fff;
+}
+
+.slider-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.textContainer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: var(--pFontSize);
+}
+
+.swiper-slide-active h3 {
+    animation: fadeInUp 1s;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    visibility: hidden;
+}
+
+.swiper {
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (min-width: 530px){
+    .swiper {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 680px){
+    .swiper {
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width: 850px){
+    .img-1{
+        background-position-y: -50px;
+    }
+    .img-2{
+        background-position-y: -85px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        visibility: visible;
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .img-1{
+        background-position-y: -80px;
+    }
+    .img-2{
+        background-position-y: -85px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .img-1{
+        background-position-y: -130px;
+    }
+    .img-2{
+        background-position-y: -180px;
+    }
+}

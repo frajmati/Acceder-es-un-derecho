@@ -4,29 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/styleGeneral.css">
     <link rel="stylesheet" href="styleIndex.css">
-    <link rel="stylesheet" href="styleGeneral.css">
-    <link rel="stylesheet" href="styleProyecto.css">
-    <link rel="stylesheet" href="styleInstituciones.css">
-    <link rel="stylesheet" href="styleEquipo.css">
-    <link rel="stylesheet" href="styleContacto.css">
-
-
-    <script src="scriptGeneral.js" defer></script>
-    <script src="scriptIndex.js" defer></script>
     
-
-
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-
-
-
-
+    <script src="js/scriptGeneral.js" defer></script>
+    <script src="js/scriptIndex.js" defer></script>
+    
     <link rel="shortcut icon" href="img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,39 +29,36 @@
         <div class="background background--4"></div>
         <div class="background background--5"></div>
     </div>
-    <div class="content hidden">
 
-    
-        
 
-        
-        
+    <div class="content">
+
 
     <button class="btn__scrollToTop" aria-label="Navegar hasta la parte superior de la página">
         <i class="fa-solid fa-arrow-up iconScroll"></i>
     </button>
 
     <header class="header">
-        <a href="" aria-label="Ir al inicio de la página" class="main__logoLink">
+        <a href="index.html" aria-label="Ir al inicio de la página" class="main__logoLink">
             <img src="img/logo.svg" class="header__img" alt="Logo del sitio web">
         </a>
 
         <nav class="nav__desktop">
             <ul class="nav__ul--desktop">
                 <li class="nav__li">
-                    <a href="" class="nav__li--a li__a--proyecto">Proyecto</a>
+                    <a href="proyecto.html" class="nav__li--a">Proyecto</a>
                 </li>
                 <li class="nav__li">
-                    <a href="" class="nav__li--a li__a--instituciones">Instituciones</a>
+                    <a href="instituciones.html" class="nav__li--a">Instituciones</a>
                 </li>
                 <li class="nav__li">
-                    <a href="" class="nav__li--a li__a--equipo">Equipo</a>
+                    <a href="equipo.html" class="nav__li--a">Equipo</a>
                 </li>
                 <li class="nav__li">
-                    <a href="" class="nav__li--a li__a--recursos">Recursos</a>
+                    <a href="recursos.html" class="nav__li--a">Recursos</a>
                 </li>
                 <li class="nav__li">
-                    <a href="" class="nav__li--a li__a--contacto">Contacto</a>
+                    <a href="contacto.html" class="nav__li--a">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -95,8 +75,8 @@
             <i class="fa-solid fa-xmark" id="markIcon"></i>
         </button>
         <ul class="nav__ul--mobile">
-            <li class="nav__li"><a href="" class="nav__li--a" tabindex="-1">Proyecto</a></li>
-            <li class="nav__li"><a href="instituciones.hmtl" class="nav__li--a" tabindex="-1">Instituciones</a></li>
+            <li class="nav__li"><a href="proyecto.html" class="nav__li--a" tabindex="-1">Proyecto</a></li>
+            <li class="nav__li"><a href="instituciones.html" class="nav__li--a" tabindex="-1">Instituciones</a></li>
             <li class="nav__li"><a href="equipo.html" class="nav__li--a" tabindex="-1">Equipo</a></li>
             <li class="nav__li"><a href="recursos.html" class="nav__li--a" tabindex="-1">Recursos</a></li>
             <li class="nav__li"><a href="contacto.html" class="nav__li--a" tabindex="-1">Contacto</a></li>
@@ -104,50 +84,30 @@
         
     </nav>
 
-    <script type="module">
 
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-        new Swiper(".swiper", {
-            direction: "horizontal",
-            speed: 800,
-            loop: true,
+        <main class="main" id="inicio">
+            <div class="container__left">
+                <div class="container__h1">
+                    <h1 class="main__h1">Acceder es un derecho</h1>
+                </div>
+                <div class="container__imgMain">
+                    <img src="img/logo.svg" alt="Logo del sitio web" class="main__img">
+                </div>
+                <a href="proyecto.html" class="main__a">Conocer más</a>
+            </div>
             
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
+            
+            <section class="section__wave">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </section>
+        </main>
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: "true",
-            }
-    });
-    </script>
-    
-
-    <div class="info">
-
-    
-
-    </div><!-- DIV DE INFO -->
 
     </div><!-- DIV DE CONTENT -->
 
-     <!-- NOTAS:
-    . Agregar word swiping animation en el footer https://www.youtube.com/watch?v=f0qX-lkk8Y8
-    . Agregar typing text animation (En la parte de Preguntas y Respuestas de Accesibilidad. ¿Qué es la accesibilidad? (bien grande con 100vh y en otra parte poner "Responsive", "Fácil", etc.
-    En esa página además agregar los resultados positivos de Wave, Lighthouse))
-    . Contador JS
-    APPLE Web - DESCARTADO
-    . Agregar Script de Userway
-    . Barra para navegar personalizada
-    -->
+
 </body>
 </html>

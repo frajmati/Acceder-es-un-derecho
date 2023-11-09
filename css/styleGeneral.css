@@ -15,6 +15,11 @@
     --gradiente: rgba(0,0,0,.4);
 }
 
+::selection {
+    background-color: var(--azulBackground); /* Cambia el color de fondo de la selección */
+    color: #ffffff; /* Cambia el color del texto seleccionado */
+}
+
 body::-webkit-scrollbar{
 	width: 7px;
 	/* background-color: #000; */
@@ -167,7 +172,7 @@ section, main {
     overflow-y: auto;
     transition: .4s;
     transform: translateX(-100%);
-    z-index: 300;
+    z-index: 350;
 }
 
 .nav__mobile.active {
